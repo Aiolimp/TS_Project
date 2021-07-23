@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./built",//生成的所有JS文件放在built目录下。
+        "allowJs": true,//接受JavaScript做为输入（通过allowJs）。
+        "target": "es5",//将JavaScript代码降级到低版本比如ECMAScript 5（通过target）。
+        "removeComments":false,//false:生成的JS文件没有ts里的注释内容 true：生成的JS文件中包含注释内容
+        "strict":false,//true,就代表我们的编译和书写规范，要按照TypeScript最严格的规范来写,false或者注释掉对设置一些不严格的写法。
+        "noImplicitAny":false, //false：允许你的注解类型any不用特意表明，true:必须明确置顶 any 类型的值。name: any
+        "strictNullChecks":false,//不强制检验null类型， const jspang: string = null; 不报错
+        // "rootDir": "./src"  TS文件的存放位置
+
+    },
+    //读取所有可识别的src目录下的文件（通过include）。
+    "include": [
+        "./src/**/*"
+    ]
+    // "include":["demo.ts"],    只读某个文件
+    // "exclude":["demo2.ts"],   不编译某个文件
+}
